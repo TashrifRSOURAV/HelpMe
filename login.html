@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Your CSS styles here */
+        /* I've kept the existing CSS styles for consistency */
+        body {
+
+            background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+            /* background-image: url("loginnnnnnn.gif"); */
+
+         background-image: url("loginpageupdate.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Open Sans", sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .box-form {
+            margin: 0 auto;
+            width: 60%;
+            height: 80%;
+            background: #FFFFFF;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* box-shadow: 0 0 20px 6px #090b6f85; */
+        }
+
+        .box-form .left {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("logoooo.png");
+            background-color: #fff;
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            
+            justify-content: center;
+            background-color: rgb(10 62 62);
+            /* background-color:#ff0000 + #0000ff; */
+            /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
+            background-position: center center;
+        }
+
+        .box-form .right {
+            padding: 40px;
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .box-form .right h2 {
+            font-size: 2.5rem;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .box-form .right form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-form .right label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .box-form .right input[type="text"],
+        .box-form .right input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .box-form .right input[type="text"]:focus,
+        .box-form .right input[type="password"]:focus {
+            border-color: #007bff;
+        }
+
+        .box-form .right input[type="submit"] {
+            background-color:rgb(10 62 62);
+            color: #FFFFFF;
+            border: none;
+            padding: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .box-form .right input[type="submit"]:hover {
+            background-color: #434343;
+          
+            border-radius: 10px;
+            
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .register-link a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <!-- Left side content -->
+            </div>
+        </div>
+        <div class="right">
+            <h2>Login</h2>
+            <form method="post" action="login.php">
+                <label for="mobile_number">Mobile Number:</label>
+                <input type="text" name="mobile_number" id="mobile_number" required><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required><br>
+                <label for="userType">User Type:</label>
+                <select name="userType" id="userType">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select><br>
+                <input type="submit" name="login" value="Login">
+            </form>
+            <div class="register-link">
+                <a href="registration.html">Register here</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

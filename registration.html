@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register and be a FRIEND</title>
+    <style>
+        body {
+            /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
+            background-image: url("loginnnnnnn.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Open Sans", sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .box-form {
+            margin: 90px;
+            width: 70%;
+            height: 70vh;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            /* box-shadow: 0 0 20px 6px #090b6f85; */
+        }
+
+        @media (max-width: 980px) {
+            .box-form {
+                flex-wrap: wrap;
+                text-align: center;
+                align-content: center;
+                align-items: center;
+            }
+        }
+
+        .box-form div {
+            height: auto;
+        }
+
+        .box-form .left {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("logoooo.png");
+            overflow: hidden;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(10 62 62);
+            background-position: center center;
+        }
+
+        .box-form .right {
+            padding: 40px;
+            overflow-y: auto;
+            width: 50%;
+        }
+
+        .box-form .right h2 {
+            font-size: 2rem;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .box-form .right p {
+            font-size: 14px;
+            color: #B0B3B9;
+        }
+
+        .box-form .right .inputs {
+            overflow: hidden;
+        }
+
+        .box-form .right input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            border-color: #007bff;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .box-form .right select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            border-color: #007bff;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .box-form .right button {
+            float: right;
+            color: #fff;
+            font-size: 16px;
+            padding: 12px 35px;
+            border-radius: 50px;
+            display: inline-block;
+            border: 0;
+            outline: 0;
+            /* box-shadow: 0px 4px 20px 0px #49c628a6; */
+            background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+            cursor: pointer;
+        }
+
+        .box-form .right input[type="submit"] {
+            background-color:rgb(10 62 62);
+            color: #FFFFFF;
+            border: none;
+            padding: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-link {
+            margin-top: 20px;
+        }
+
+        .login-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <!-- Content of the left side if any -->
+            </div>
+        </div>
+        <div class="right">
+            <h2>Register and be a FRIEND</h2>
+            <form method="post" action="registration.php">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required><br>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <label for="blood_group">Blood Group:</label>
+                <select name="blood_group" id="blood_group">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select><br>
+
+                <label for="mobile_number">Mobile Number:</label>
+                <input type="text" name="mobile_number" id="mobile_number" required><br>
+
+                <label for="last_donation_date">Birth Date:</label>
+                <input type="date" name="last_donation_date" id="last_donation_date" required><br>
+
+                <label for="location">Location:</label>
+                <select name="location" id="location">
+                    <option value="Badda">Badda</option>
+                    <option value="Natun Bazar">Natun Bazar</option>
+                    <option value="Mirpur">Mirpur</option>
+                    <!-- Add more locations as needed -->
+                </select><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required><br>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password" required><br>
+
+                <input type="submit" name="register" value="Register">
+                <div class="login-link">
+                    <a href="login.html">Already have an account? Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
